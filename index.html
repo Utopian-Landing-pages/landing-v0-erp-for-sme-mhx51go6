@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERPro - Modern ERP Solutions for SMEs | Streamline Your Business Operations</title>
+    <meta name="description" content="Transform your SME with ERPro's comprehensive ERP solution. Streamline operations, boost productivity, and scale your business with our modern, cloud-based platform.">
+    <meta name="keywords" content="ERP, SME, small business, enterprise resource planning, business management, cloud ERP">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="ERPro - Modern ERP Solutions for SMEs">
+    <meta property="og:description" content="Transform your SME with ERPro's comprehensive ERP solution. Streamline operations, boost productivity, and scale your business.">
+    <meta property="og:image" content="https://source.unsplash.com/1200x630/business,office,technology">
+    <meta property="og:url" content="https://erpro.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ERPro - Modern ERP Solutions for SMEs">
+    <meta name="twitter:description" content="Transform your SME with ERPro's comprehensive ERP solution.">
+    <meta name="twitter:image" content="https://source.unsplash.com/1200x630/business,office,technology">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Vercel Analytics -->
+    <script defer src="https://cdn.vercel-analytics.com/v1/script.js"></script>
+    <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #ff0158 0%, #ff01d7 50%, #ff2901 100%); }
+        .text-gradient { background: linear-gradient(135deg, #ff0158, #ff01d7, #ff2901); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(255, 1, 88, 0.2); }
+        .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .brand-primary { color: #ff0158; }
+        .brand-secondary { color: #ff01d7; }
+        .brand-accent { color: #ff2901; }
+        .bg-brand-primary { background-color: #ff0158; }
+        .bg-brand-secondary { background-color: #ff01d7; }
+        .bg-brand-accent { background-color: #ff2901; }
+        .border-brand-primary { border-color: #ff0158; }
+        .counter { font-variant-numeric: tabular-nums; }
+    </style>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "ERPro",
+        "description": "Modern ERP Solutions for SMEs",
+        "url": "https://erpro.com",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": {
+            "@type": "Offer",
+            "price": "99",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-gradient">ERPro</div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link text-gray-700 hover:text-brand-primary px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="#features" class="nav-link text-gray-700 hover:text-brand-primary px-3 py-2 text-sm font-medium transition-colors">Features</a>
+                        <a href="#about" class="nav-link text-gray-700 hover:text-brand-primary px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="#pricing" class="nav-link text-gray-700 hover:text-brand-primary px-3 py-2 text-sm font-medium transition-colors">Pricing</a>
+                        <a href="#testimonials" class="nav-link text-gray-700 hover:text-brand-primary px-3 py-2 text-sm font-medium transition-colors">Testimonials</a>
+                        <a href="#faq" class="nav-link text-gray-700 hover:text-brand-primary px-3 py-2 text-sm font-medium transition-colors">FAQ</a>
+                        <a href="#contact" class="nav-link text-gray-700 hover:text-brand-primary px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="#pricing" class="bg-brand-primary text-white px-6 py-2 rounded-lg font-medium hover:bg-opacity-90 transition-all duration-300 hover:shadow-lg">
+                        Get Started
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-brand-primary focus:outline-none focus:text-brand-primary">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50 rounded-md transition-colors">Home</a>
+                <a href="#features" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50 rounded-md transition-colors">Features</a>
+                <a href="#about" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50 rounded-md transition-colors">About</a>
+                <a href="#pricing" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50 rounded-md transition-colors">Pricing</a>
+                <a href="#testimonials" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50 rounded-md transition-colors">Testimonials</a>
+                <a href="#faq" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50 rounded-md transition-colors">FAQ</a>
+                <a href="#contact" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50 rounded-md transition-colors">Contact</a>
+                <a href="#pricing" class="block mx-3 mt-4 bg-brand-primary text-white px-6 py-2 rounded-lg font-medium text-center hover:bg-opacity-90 transition-all">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 gradient-bg opacity-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-white via-transparent to-gray-50"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 fade-in">
+                        Transform Your <span class="text-gradient">SME</span> with Modern ERP Solutions
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed fade-in">
+                        Streamline operations, boost productivity, and scale your business with ERPro's comprehensive, cloud-based ERP platform designed specifically for small and medium enterprises.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start fade-in">
+                        <a href="#pricing" class="bg-brand-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                            Start Free Trial
+                        </a>
+                        <a href="#features" class="border-2 border-brand-primary text-brand-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-brand-primary hover:text-white transition-all duration-300">
+                            Learn More
+                        </a>
+                    </div>
+                    <div class="mt-12 flex items-center justify-center lg:justify-start space-x-8 fade-in">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-brand-primary counter" data-target="500">0</div>
+                            <div class="text-sm text-gray-600">Happy Clients</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-brand-secondary counter" data-target="99">0</div>
+                            <div class="text-sm text-gray-600">Uptime %</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-brand-accent counter" data-target="24">0</div>
+                            <div class="text-sm text-gray-600">Support</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative fade-in">
+                    <img src="https://source.unsplash.com/800x600/business,dashboard,analytics" alt="ERP Dashboard" class="rounded-2xl shadow-2xl hover-lift">
+                    <div class="absolute -top-4 -right-4 bg-white p-4 rounded-xl shadow-lg">
+                        <div class="text-2xl">📈</div>
+                        <div class="text-sm font-semibold text-gray-700">+40% Growth</div>
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 bg-white
